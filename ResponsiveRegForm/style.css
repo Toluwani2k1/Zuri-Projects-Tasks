@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(0, 100%, 74%);
+}
+
+main {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	margin: auto;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.left-content {
+	color: #fff;
+	padding: 20px;
+	flex: 50%;
+}
+.left-content h1 {
+	padding-bottom: 10px;
+}
+
+.right-content {
+	flex: 50%;
+	padding: 20px;
+}
+.btn-top {
+	border-radius: 1px;
+	background-color: hsl(248, 32%, 49%);
+	color: #fff;
+	width: 100%;
+	padding: 0.5em;
+	margin-bottom: 10px;
+}
+
+form {
+	padding: 2em;
+	width: 100%;
+	background-color: floralwhite;
+	border-radius: 1px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	width: 100%;
+	display: block;
+	padding: 0.5em 1em;
+	border-radius: 1px;
+}
+.right-content .right-content-top {
+	background-color: hsl(249, 10%, 26%);
+	padding: 2em;
+	width: 50%;
+}
+.right-content .right-content-bottom {
+	padding: 2em;
+	width: 50%;
+}
+.btn-bottom {
+	width: 100%;
+	display: block;
+	background-color: hsl(154, 59%, 51%);
+	color: #fff;
+	padding: 0.5em 1em;
+	border-radius: 1px;
+	text-transform: uppercase;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+	main {
+		font-family: 'Poppins', sans-serif;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	* {
+		font-family: 'Poppins', sans-serif;
+		font-size: 16px;
+	}
+	main {
+		font-family: 'Poppins', sans-serif;
+		width: 50%;
+		display: grid;
+		justify-content: center;
+		align-items: center;
+	}
+	.left-content {
+		text-align: center;
+		width: 100%;
+		padding: auto;
+	}
+	.right-content {
+		text-align: center;
+		width: 100%;
+		padding: 5px;
+	}
+}
+
+
+@media screen and (max-width: 375px) {
+	main {
+		font-family: 'Poppins', sans-serif;
+		width: 100%;
+		display: grid;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.left-content {
+		text-align: center;
+		margin: auto;
+	}
+
+	.right-content {
+		padding: 5px;
+		margin: auto;
+	}
+}
